@@ -21,3 +21,8 @@ Welcome to **News Mania** – a web application that keeps you updated with the 
 1. Clone this repository:
    ```bash
    git clone https://github.com/Deepu1004/-News-Mania.git
+2. Navigate to the project directory:
+   ```bash
+   cd -News-Mania
+3. Install the required dependencies (if applicable).
+4. Start the application, and enjoy browsing the latest news from your selected sources.
