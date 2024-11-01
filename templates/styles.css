@@ -1,0 +1,112 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+/* News Section */
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.news-site {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.news-site:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-site:active {
+  transform: scale(0.9);
+}
+
+/* BBC News */
+
+.news-site.bbc {
+  background-image: linear-gradient(to bottom, #3498db, #2ecc71);
+  color: #fff;
+}
+
+/* CNN News */
+
+.news-site.cnn {
+  background-image: linear-gradient(to bottom, #e74c3c, #c0392b);
+  color: #fff;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .news-site {
+    margin: 10px;
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-site {
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+  }
+}

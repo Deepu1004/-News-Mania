@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site }} News</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        }
+
+        h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #3498db;
+        }
+
+        .headline {
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .headline:hover {
+        background-color: #f7f7f7;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+        text-decoration: none;
+        color: #3498db;
+        }
+
+        a:hover {
+        color: #2ecc71;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{ site }} Headlines</h1>
+
+    {% for headline in headlines %}
+    <div class="headline">{{ headline }}</div>
+    {% endfor %}
+
+    <a href="/">Back to Homepage</a>
+</body>
+
+</html>
